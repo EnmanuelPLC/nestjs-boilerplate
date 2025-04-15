@@ -33,8 +33,6 @@ const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
 });
 
 import { AdsModule } from './ads/ads.module';
-import { SocialNetworkDataService } from './social-network-data/social-network-data.service';
-import { SocialNetworkDataController } from './social-network-data/social-network-data.controller';
 import { SocialNetworkDataModule } from './social-network-data/social-network-data.module';
 
 @Module({
@@ -90,7 +88,7 @@ import { SocialNetworkDataModule } from './social-network-data/social-network-da
     HomeModule,
     SocialNetworkDataModule,
   ],
-  providers: [SocialNetworkDataService],
-  controllers: [SocialNetworkDataController],
+  providers: [],
+  controllers: [],
 })
 export class AppModule {}
