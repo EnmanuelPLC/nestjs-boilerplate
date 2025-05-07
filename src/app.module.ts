@@ -32,12 +32,12 @@ const infrastructureDatabaseModule = TypeOrmModule.forRootAsync({
   },
 });
 
-import { AdsModule } from './ads/ads.module';
 import { SocialNetworkDataModule } from './social-network-data/social-network-data.module';
+import { CampaignsModule } from './campaigns/campaigns.module';
 
 @Module({
   imports: [
-    AdsModule,
+    CampaignsModule,
     ConfigModule.forRoot({
       isGlobal: true,
       load: [
